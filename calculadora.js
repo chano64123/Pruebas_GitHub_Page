@@ -49,3 +49,15 @@ const operation = (number) => {
         Android.showAlertMessage("Tiene que ingresar numeros","Aviso");
     }
 }
+
+//Esto es de prueba
+
+function sendDataToAndroid() {
+    var data = "Esto de aca es un toast";
+    Android.callFromJavascript(data);
+}
+
+function receiveDataFromAndroid(result) {
+    // Hacer algo con el resultado que proviene de Android
+    document.getElementById('txtResult').value = result;
+}
