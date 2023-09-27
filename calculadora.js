@@ -53,6 +53,7 @@ const operation = (number) => {
 //Esto es de prueba
 
 function sendDataToAndroid() {
+    alert("suma");
     var data = "Esto de aca es un toast";
     Android.callFromJavascript(data);
 }
